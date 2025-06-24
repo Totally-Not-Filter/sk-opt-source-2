@@ -162,7 +162,7 @@ zoneanimdeclanonid := 0
 zoneanimdecl macro duration,artaddr,vramaddr,numentries,numvramtiles
 zoneanimdeclanonid := zoneanimdeclanonid + 1
 start:
-	dc.l (duration&$FF)<<24|artaddr
+	dc.l (duration&$FF)<<24|dmaSource(artaddr)
 	dc.w tiles_to_bytes(vramaddr)
 	dc.b numentries, numvramtiles
 zoneanimcount := zoneanimcount + 1
@@ -276,7 +276,7 @@ soundBankStart := __LABEL__
 soundBankName := "__LABEL__"
     endm
 
-DebugSoundbanks := 0
+DebugSoundbanks := 1
 
 finishBank macro
 	if * > soundBankStart + $8000
