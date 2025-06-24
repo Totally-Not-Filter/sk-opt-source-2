@@ -112,7 +112,7 @@ AniSuperSonic:	dc.w AniSuperSonic00-AniSuperSonic
 		dc.w AniSonic1F-AniSuperSonic
 AniSuperSonic00:dc.b  $FF,   1,   2,   3,   4,   5,   6,   7,   8, $FF
 AniSuperSonic01:dc.b  $FF, $21, $22, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-AniSuperSonic04:dc.b  $FD, $B6, $B7, $B8, $B9, $FF, $FF, $FF, $FF, $FF
+AniSuperSonic04:dc.b  $FD, $B5, $B6, $B7, $B8, $B9, $FF, $FF, $FF, $FF
 AniSuperSonic05:dc.b    7, $BA, $BB, $FF
 AniSuperSonic06:dc.b    9, $A1, $A2, $A3, $FF
 AniSuperSonic08:dc.b    5, $9B, $FF

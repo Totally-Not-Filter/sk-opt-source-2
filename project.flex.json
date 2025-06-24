@@ -1,0 +1,57 @@
+{
+    "Flex": 2,
+    "name": "",
+    "node": "67590c91-8f9e-4846-9966-643b374d4d8e",
+    "objects": [
+        {
+            "format": "Sonic 3&K Sonic.js",
+            "name": "Sonic (EXTRA)",
+            "palettes": [
+                {
+                    "path": "General\\Sprites\\Sonic\\Palettes\\SonicAndTails.bin",
+                    "length": 1
+                }
+            ],
+            "art": {
+                "path": "General\\Sprites\\Sonic\\Art\\Sonic Extra.bin",
+                "compression": "Uncompressed",
+                "offset": 0
+            },
+            "mappings": {
+                "path": "General\\Sprites\\Sonic\\Map - Sonic (FLEX2).asm",
+                "label": ""
+            },
+            "dplcs": {
+                "enabled": true,
+                "path": "General\\Sprites\\Sonic\\DPLC - Sonic (FLEX2).asm",
+                "label": ""
+            },
+            "uuid": "6ed2c325-15ee-4707-bcd7-bbfdcf210c44"
+        },
+        {
+            "format": "Sonic 3&K Sonic.js",
+            "name": "Sonic",
+            "palettes": [
+                {
+                    "path": "General\\Sprites\\Sonic\\Palettes\\SonicAndTails.bin",
+                    "length": 1
+                }
+            ],
+            "art": {
+                "path": "General\\Sprites\\Sonic\\Art\\Sonic.bin",
+                "compression": "Uncompressed",
+                "offset": 0
+            },
+            "mappings": {
+                "path": "General\\Sprites\\Sonic\\Map - Sonic (FLEX2).asm",
+                "label": ""
+            },
+            "dplcs": {
+                "enabled": true,
+                "path": "General\\Sprites\\Sonic\\DPLC - Sonic (FLEX2).asm",
+                "label": ""
+            },
+            "uuid": "67590c91-8f9e-4846-9966-643b374d4d8e"
+        }
+    ]
+}
