@@ -13,7 +13,7 @@
                 }
             ],
             "art": {
-                "path": "General\\Sprites\\Sonic\\Art\\Sonic Extra.bin",
+                "path": "General\\Sprites\\Sonic\\Art\\Sonic Extra (FLEX2).bin",
                 "compression": "Uncompressed",
                 "offset": 0
             },
@@ -38,7 +38,7 @@
                 }
             ],
             "art": {
-                "path": "General\\Sprites\\Sonic\\Art\\Sonic.bin",
+                "path": "General\\Sprites\\Sonic\\Art\\Sonic (FLEX2).bin",
                 "compression": "Uncompressed",
                 "offset": 0
             },

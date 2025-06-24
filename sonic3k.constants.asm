@@ -858,19 +858,23 @@ Player_option			ds.w 1			; option selected on level select, data select screen o
 			ds.w 1				; unused
 
 Kos_decomp_queue_count		ds.w 1			; the number of pieces of data on the queue. Sign bit set indicates a decompression is in progress
-Kos_decomp_stored_registers	ds.w 20			; allows decompression to be spread over multiple frames
+Kos_decomp_stored_Wregisters	ds.w	7	; allows decompression to be spread over multiple frames
+Kos_decomp_stored_Lregisters	ds.l	3	; allows decompression to be spread over multiple frames
+Kos_decomp_stored_registers	=	Kos_decomp_stored_Wregisters
+Kos_decomp_stored_registers_End	=	*
 Kos_decomp_stored_SR		ds.w 1
 Kos_decomp_bookmark		ds.l 1			; the address within the Kosinski queue processor at which processing is to be resumed
-Kos_description_field		ds.w 1			; used by the Kosinski queue processor the same way the stack is used by the normal Kosinski decompression routine
 Kos_decomp_queue		ds.l 2*4		; 2 longwords per entry, first is source location and second is decompression location
+Kos_decomp_queue_End
 Kos_decomp_source =		Kos_decomp_queue	; long ; the compressed data location for the first entry in the queue
 Kos_decomp_destination =	Kos_decomp_queue+4	; long ; the decompression location for the first entry in the queue
-Kos_modules_left		ds.b 1			; the number of modules left to decompresses. Sign bit set indicates a module is being decompressed/has been decompressed
-			ds.b 1				; unused
+Kos_modules_left		ds.w 1			; the number of modules left to decompresses. Sign bit set indicates a module is being decompressed/has been decompressed
 Kos_last_module_size		ds.w 1			; the uncompressed size of the last module in words. All other modules are $800 words
 Kos_module_queue		ds.w 3*4		; 6 bytes per entry, first longword is source location and next word is VRAM destination
+Kos_module_queue_End
 Kos_module_source =		Kos_module_queue	; long ; the compressed data location for the first module in the queue
 Kos_module_destination =	Kos_module_queue+4	; word ; the VRAM destination for the first module in the queue
+					ds.b $10	; unused
 
 _unkFF7C			ds.w 1
 _unkFF7E			ds.w 1
